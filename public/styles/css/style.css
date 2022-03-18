@@ -1,0 +1,15 @@
+h1 {
+    color: white;
+}
+
+.entry{
+    text-align: center;
+}
+
+body{
+    background-color: grey;
+}
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

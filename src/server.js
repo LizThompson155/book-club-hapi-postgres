@@ -1,8 +1,9 @@
 'use strict';
 
 const Hapi = require('hapi');
-const plugins = require('./src/plugins');
-const routes = require('./src/routes');
+const plugins = require('./plugins');
+const routes = require('./routes');
+const views = require('./views');
 
 const app = async config => {
     const { host, port } = config;
@@ -10,9 +11,9 @@ const app = async config => {
 
     server.app.config = config;
 
-    console.log(process.env);
 	await plugins.register( server );
 	await routes.register( server );
+    await views.register( server );
 	return server;
 };
 
