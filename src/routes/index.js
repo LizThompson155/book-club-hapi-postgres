@@ -19,7 +19,7 @@ const route = {
     path: '/index',
     handler: (req, h) => {
       return h.view('index', {
-          title: 'Babes On Books',
+          title: 'The paiges of pages',
           message: 'A new app developed with hapi'
       });
   }
